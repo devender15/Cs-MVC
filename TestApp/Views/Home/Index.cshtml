@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    var date = DateTime.Now.ToShortDateString();
+    string message = "Hello World!";
+    @:Today's date is : @date
+    //@message;
+
+
+    void RenderName(string name)
+    {
+        <p class="fs-2">Hello <strong>@name</strong></p>
+    }
+
+    RenderName("Dev");
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p class="fw-bold text-primary">@message</p>
+      
+    <div>
+    </div>
+    
+</div>
